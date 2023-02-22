@@ -13,7 +13,8 @@ h2 {
     font-size: 2.5rem;
     line-height: 1.8;
 }
-h3{
+
+h3 {
     font-family: "Montserrat";
     font-size: 1.5rem;
 }
@@ -26,7 +27,7 @@ p {
 #title {
     background-color: #ff4c68;
     color: white;
-    padding: 8% 15%;
+    padding: 8% 17%;
 }
 
 .container-fluid {}
@@ -59,11 +60,29 @@ p {
     width: 50%;
     transform: rotate(25deg);
     margin-left: 9rem;
+    position: absolute;
+    left: 15%;
+    top: 8%;
+}
+
+@media (max-width: 1000px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        margin: auto;
+    }
 }
 
 /* Features */
 #features {
     padding: 5% 15%;
+    background-color: white;
+    position: relative;
+
 }
 
 .features-box {
@@ -111,18 +130,47 @@ p {
 .carousel-item {
     padding: 12% 15%;
 }
+
 /* Pricing */
-#pricing{
+#pricing {
     padding: 5% 20%;
     text-align: center;
     font-family: "Ubuntu";
 }
-#pricing h3{
+
+#pricing h3 {
     font-family: "Ubuntu";
 }
-#pricing h2{
+
+#pricing h2 {
     font-family: "Ubuntu";
 }
-.slider-position{
+
+.slider-position {
     margin-top: 3%;
+}
+
+/* Call to Action */
+#cta {
+    padding: 5% 12%;
+    text-align: center;
+    background-color: #ff4c68;
+    color: white;
+}
+#cta h3{
+    font-family: "Montserrat";
+    font-size: 3rem;
+}
+
+/* Footer */
+#footer {
+    padding: 2% 12%;
+    text-align: center;
+}
+#footer button{
+    border: none;
+    background: none;
+}
+#footer button:focus{
+    outline: 0;
 }
